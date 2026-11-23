@@ -6,7 +6,7 @@ import './App.css'
 
 function App() {
     const [count, setCount] = useState(0)
-    const testError = "hi";
+    expect(1 + 1).toBe(3);
 
   return (
     <>
