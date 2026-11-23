@@ -12,11 +12,11 @@ jobs:
         with:
           node-version: 20
       - name: Install dependencies
+        working-directory: ./reactproject1
         run: npm ci
+      - name: Run ESLint
         working-directory: ./reactproject1
-      - name: Run Lint
         run: npm run lint
-        working-directory: ./reactproject1
       - name: Run tests
-        run: npm test
         working-directory: ./reactproject1
+        run: npm test
